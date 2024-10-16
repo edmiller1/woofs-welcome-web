@@ -4,41 +4,41 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <a href="/">
+            <NuxtLink to="/">
               <span class="flex items-center text-2xl font-bold text-primary">
                 <Icon
                   name="lucide:dog"
                   class="w-8 h-8 mr-2 text-primary hover:animate-wiggle"
                 />
               </span>
-            </a>
+            </NuxtLink>
           </div>
           <div class="hidden md:block">
             <div class="flex items-baseline ml-10 space-x-4">
-              <a
-                href="/List-your-business"
+              <NuxtLink
+                to="/List-your-business"
                 class="px-3 py-2 text-sm font-semibold rounded-md text-foreground hover:text-primary"
               >
                 List your business
-              </a>
-              <a
-                href="/advertise"
+              </NuxtLink>
+              <NuxtLink
+                to="/advertise"
                 class="px-3 py-2 text-sm font-semibold rounded-md text-foreground hover:text-primary"
               >
                 Advertise
-              </a>
-              <a
-                href="/about"
+              </NuxtLink>
+              <NuxtLink
+                to="/about"
                 class="px-3 py-2 text-sm font-semibold rounded-md text-foreground hover:text-primary"
               >
                 About
-              </a>
-              <a
-                href="/contact"
+              </NuxtLink>
+              <NuxtLink
+                to="/contact"
                 class="px-3 py-2 text-sm font-semibold rounded-md text-foreground hover:text-primary"
               >
                 Contact
-              </a>
+              </NuxtLink>
               <Button class="font-semibold">Get the app</Button>
             </div>
           </div>
@@ -63,12 +63,16 @@
                   <h1>Woofs Welcome</h1>
                 </div>
                 <Separator />
-                <a href="/List-your-business" class="text-foreground">
+                <NuxtLink to="/List-your-business" class="text-foreground">
                   List your business
-                </a>
-                <a href="/advertise" class="text-foreground"> Advertise </a>
-                <a href="/about" class="text-foreground"> About </a>
-                <a href="/contact" class="text-foreground"> Contact </a>
+                </NuxtLink>
+                <NuxtLink to="/advertise" class="text-foreground">
+                  Advertise
+                </NuxtLink>
+                <NuxtLink to="/about" class="text-foreground"> About </NuxtLink>
+                <NuxtLink to="/contact" class="text-foreground">
+                  Contact
+                </NuxtLink>
               </nav>
               <div class="mt-auto">
                 <Button class="w-full">Log in</Button>
@@ -78,10 +82,10 @@
         </div>
         <div class="items-center hidden space-x-4 md:flex">
           <Button asChild class="font-semibold">
-            <a href="/login"> Log in </a>
+            <NuxtLink to="/login"> Log in </NuxtLink>
           </Button>
           <Button variant="link" class="font-semibold text-black"
-            >Create account &rarr;</Button
+            ><NuxtLink to="/signup">Create account &rarr;</NuxtLink></Button
           >
         </div>
         <!-- <div class="flex items-center justify-end w-full space-x-5 md:hidden">

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: "Woofs Welcome",
+});
+</script>
+
 <template>
   <section
     class="flex flex-col w-full min-h-screen bg-background overflow-x-none"
